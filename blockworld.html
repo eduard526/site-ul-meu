@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PACO SUD FOCȘANI - Supermarket</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background: #b5121b;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #ffdb29;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #ffdb29;
+}
+
+.hero {
+    min-height: 550px;
+    background: linear-gradient(
+        rgba(120,0,0,.65),
+        rgba(0,0,0,.65)
+    ), url('https://images.unsplash.com/photo-1542838132-92c53300491e');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.hero-content h1 span {
+    color: #ffdb29;
+}
+
+.hero-content p {
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffdb29;
+    color: #9c1018;
+    padding: 16px 35px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 38px;
+    color: #b5121b;
+    margin-bottom: 40px;
+}
+
+.intro {
+    padding: 75px 8%;
+    text-align: center;
+    background: white;
+}
+
+.intro p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+    font-size: 18px;
+}
+
+.offers {
+    padding: 80px 7%;
+    background: #fff8e5;
+}
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.offer-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.offer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.15);
+}
+
+.offer-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.offer-card h3 {
+    color: #b5121b;
+    padding: 18px 18px 8px;
+    font-size: 21px;
+}
+
+.offer-card p {
+    padding: 0 18px 20px;
+    color: #666;
+    line-height: 1.5;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">PACO <span>SUD</span></div>
+    <nav>
+        <a href="#acasa">Acasă</a>
+        <a href="#oferte">Oferte</a>
+        <a href="#produse">Produse</a>
+        <a href="#magazin">Magazin</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="acasa">
+    <div class="hero-content">
+        <h1>BINE AI VENIT LA <span>PACO SUD!</span></h1>
+        <p>Tot ce ai nevoie, într-un singur loc!</p>
+        <a href="#oferte" class="btn">DESCOPERĂ OFERTELE</a>
+    </div>
+</section>
+
+<section class="intro" id="magazin">
+    <h2 class="section-title">Bine ai venit la PACO SUD!</h2>
+    <p>
+        Descoperă magazinul PACO SUD din Focșani.
+        Aici poți găsi informații despre magazin,
+        categorii de produse și noutăți.
+    </p>
+</section>
+
+<section class="offers" id="oferte">
+    <h2 class="section-title">CATEGORII DE PRODUSE</h2>
+
+    <div class="offer-grid">
+
+        <div class="offer-card">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999" alt="Legume">
+            <h3>Fructe și legume</h3>
+            <p>Descoperă categoria de fructe și legume.</p>
+        </div>
+
+        <div class="offer-card">
+            <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150" alt="Lactate">
+            <h3>Lactate</h3>
+            <p>Produse lactate pentru cumpărăturile zilnice.</p>
+        </div>
+
+        <div class="offer-card">
+            <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f" alt="Carne">
+            <h3>Carne</h3>
+            <p>Descoperă categoria produselor din carne.</p>
+        </div>
+
+        <div class="offer-card">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff" alt="Panificație">
+            <h3>Panificație</h3>
+            <p>Produse de panificație pentru fiecare zi.</p>
+        </div>
+
+        <div class="offer-card">
+            <img src="https://images.unsplash.com/photo-1546173159-315724a31696" alt="Băuturi">
+            <h3>Băuturi</h3>
+            <p>O varietate de băuturi pentru toate gusturile.</p>
+        </div>
+
+        <div class="offer-card">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e" alt="Alimente">
+            <h3>Alimente</h3>
+            <p>Produse pentru cumpărăturile de zi cu zi.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="produse" style="padding:75px 8%;text-align:center;background:white;">
+    <h2 class="section-title">DESCOPERĂ PACO SUD</h2>
+    <p style="font-size:18px;color:#555;line-height:1.8;">
+        Un loc unde poți descoperi diferite categorii
+        de produse pentru cumpărăturile tale.
+    </p>
+</section>
+
+<section id="contact" style="padding:75px 8%;text-align:center;background:#b5121b;color:white;">
+    <h2 style="font-size:38px;margin-bottom:25px;">CONTACT PACO SUD</h2>
+    <p style="font-size:19px;margin-bottom:15px;">Focșani, Vrancea, România</p>
+    <p style="margin-bottom:25px;">Te așteptăm la cumpărături!</p>
+    <a href="https://www.google.com/maps/search/?api=1&query=PACO+SUD+Focsani"
+       target="_blank" class="btn">
+       VEZI LOCAȚIA
+    </a>
+</section>
+
+<footer style="background:#222;color:white;text-align:center;padding:30px;">
+    <div style="font-size:25px;font-weight:bold;color:#ffdb29;margin-bottom:12px;">
+        PACO SUD
+    </div>
+    <p>Focșani, România</p>
+    <p style="margin-top:15px;color:#aaa;">
+        © 2026 PACO SUD - Pagină neoficială de prezentare.
+    </p>
+</footer>
+
+<style>
+@media(max-width:768px) {
+    header {
+        justify-content:center;
+        text-align:center;
+    }
+
+    nav {
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero-content h1 {
+        font-size:38px;
+    }
+
+    .hero-content p {
+        font-size:18px;
+    }
+
+    .section-title {
+        font-size:29px;
+    }
+}
+</style>
+
+</body>
+</html>
